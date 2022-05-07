@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="encriptador.css">
+    
+
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="img/Logo.png" alt="logo">
+    </header>
+    
+    <main> 
+
+        <div id="bloqueUno">
+            <textarea name="encriptador"type="text"id="textoNuevo"placeholder="Ingrese el texto aquí"autofocuswrap="hard"required></textarea>
+    
+            <div id="exclamacion">
+                <img id="imgExclam" src="img/bi_exclamation-circle-fill.png" alt="imgExclamacion">
+                <p id="textExclam">Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+            <div id="botones">
+                <button id="botonEncriptar"> <p id="textEncriptar">Encriptar</p></button>
+                <button id="botonDesencriptar"><p id="textDesencriptar">Desencriptar</p></button>
+            </div>
+
+        </div>
+        
+        <div id="bloqueDos">
+            <div id="rectanguloUno">
+                <img id="muneco"  src="img/Muñeco.png" alt="muñeco">
+                <div id="preCodificacion" >
+                        <h3 id="datoUno">Ningún mensaje fue encontrado</h3>
+                        <h2 id="datoDos">Ingresa el texto que deseas encriptar o desencriptar</h2>
+                 </div>
+            </div>
+    
+            <div id="rectanguloDos" class="invisible">
+        
+                <textarea name="codificado"type="text"id="codificadoId"class="invisible"wrap="hard"value=""disabled></textarea>
+        
+                <div id="postCodificar" >
+                   <button id="botonCopiar" class="botonOculto"><p class="textCopiar" >Copiar</p></button>
+               </div>
+           </div>
+        </div>
+
+    </main>
+    
+    <footer id="rodapie">
+        <p>Diseñado por Pablo Sebastian Acevedo</p>
+        <p>Contacto: pabloz21v@gmail.com</p>
+
+       
+    </footer>
+    
+    <script src="encriptador.js"></script>
+    <script src="visibilidad.js"></script>
+    <script src="desencriptar.js"></script>
+    <script src="botonCopiar.js"></script>
+
+</body>
+
+</html>
+
